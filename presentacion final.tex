@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template Beamer Sugestivo para Projetos no Senac
+% by ezefranca.com
+% Based on MIT Beamer Template
+% As cores laranja e azul seguem o padrao proposto no manual de uso da identidade visual senac
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%\documentclass{beamer} %voce pode usar este modelo tambem
+\documentclass[handout,t]{beamer}
+\usepackage{graphicx,url}
+\usepackage[perú]{babel}   
+\usepackage[utf8]{inputenc}
+\batchmode
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of}
+\usetheme{Berlin}
+
+
+%-------------------------Titulo/Autores/Orientador------------------------------------------------
+\title[Análisis del Retroceso de los glaciares de la cordillera huayhuash]{Universitário Nacional Agraria la Molina\\Tecnicas de programacion II\\Análisis del Retroceso de los glaciares de la cordillera huayhuash\\}
+\date{}
+\author[Trabajo Final - Tecnicad de Programación]{Luis Enrique Luna Ramos\\ Janpier Luis Denis Meza Salazar\\}
+
+
+%-------------------------Este código faz o menuzinho bacana na parte superior do slide------------
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\beamerdefaultoverlayspecification{<+->}
+% -----------------------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------------------------------------
+
+%---Gerador de Sumário---------------------------------------------------------
+\frame{\titlepage}
+\section[]{}
+\begin{frame}{Indice}
+  \tableofcontents
+\end{frame}
+%---Fim do Sumário------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+\section{Introducción}
+\begin{frame}{Introducción}
+La cordillera Huayhuash se ubica entre los departamentos de Ancash y Huanuco, tiene una extensión aproximada de 26km entres las coordenadas paralelas de 10º 12’ - 10º 27’ de latitud sur y 76º 52’ - 77º00’ de longitud oeste (UGRH, 2014).
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{1.jpg}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\subsection{Objetivo}
+\begin{frame}{Objetivos}
+  \begin{itemize}
+    \item Objetivo General \\ Estudiar, a partir de herramientas de teledetección, la evolución de los glaciares de la cordillera Huayhuash en Perú a lo largo de los años (1999-2021), con el fin de determinar el cambio en área total de cobertura de hielo.\\
+    
+    \item Objetivo Especifico \\ Medir y detectar la cobertura de hielo de la cordillera huayhuash para cada año dentro del rango temporal seleccionado a partir de una clasificación supervisada de las imágenes satelitales utilizadas y sus respectivas firmas espectrales. \\
+  \end{itemize}
+  
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Marco teórico}
+\begin{frame}{Marco teórico}
+Según Naciones Unidas (s.f). El cambio climático se refiere a cambios duraderos en temperaturas y fenómenos meteorológicos
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{2.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Marco teórico}
+En el contexto peruano algunos impactos del cambio climático en los andes.: 
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{3.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Metodologia}
+\begin{frame}{Metodologia}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.64\textwidth]{4.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Metodologia}
+\begin{itemize}
+    \item \small{TRATAMIENTO DE IMAGENES SATELITALES DE LANDSAT}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{5.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Metodologia}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{7.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Metodologia}
+\begin{itemize}
+    \item \small{SERIE DE TIEMPO}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{8.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Resultados}
+\begin{frame}{Resultados}
+\begin{itemize}
+    \item \small{La tabla de resultados de los años representativos}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{TAbla.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Resultados}
+\begin{itemize}
+    \item \small{Indice NDSI con umbral menor que 0.4}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{R.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Resultados}
+\begin{itemize}
+    \item \small{Serie de tiempo de la temperatura max}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{tmax.png}
+\end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Resultados}
+\begin{itemize}
+    \item \small{Serie de tiempo de la temperatura min}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{tmin.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Resultados}
+\begin{itemize}
+    \item \small{Serie de tiempo de la precipitación}
+    \end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{pp.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\section{Conclusiones}
+\begin{frame}{Conclusiones}
+  \begin{itemize}
+    \item \small{Durante el periodo de estudio de 1999 a 2021 se mostro que el nevado de la Cordillera Huayhuash se redujo drasticamente .}
+    \item \small{Durante el período 2016-2018, se observaron tasas negativas de derretimiento de los glaciares en los campos de nieve junto con una disminución de la temperatura máxima, lo que indica un posible aumento neto de la capa de nieve en la región durante este período.}
+    \item \small{La precipitación ayuda a la formación de los nevados como muestra la tabla en el año de 2020 a 2021 se presento un incremento del nevado tal como indica la serie de tiempo en ese rango se registro lluvias.}
+    \end{itemize}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+
+\end{document}
+%-----------------------------------------------Este comentario nunca aparecera
